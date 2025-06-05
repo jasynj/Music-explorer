@@ -3,12 +3,19 @@ const playlists = [
 id: 1,
 name: "Abbey Road",
 author: "The Beatles",
-likeCount: 12250,
+likeCount: 1250,
 cover: "img/abbey_road.png",
 songs: [
-    { title: "Come Together", artist: "The Beatles", duration: "4:19" },
-    { title: "Something", artist: "The Beatles", duration: "3:03" },
-    { title: "Octopus's Garden", artist: "The Beatles", duration: "2:51" }
+    { title: "Hey Jude", artist: "The Beatles", duration: "4:05" },
+    { title: "Let It Be", artist: "The Beatles", duration: "3:50" },
+    { title: "Come Together", artist: "The Beatles", duration: "4:18" },
+    { title: "Ob-La-Di, Ob-La-Da", artist: "The Beatles", duration: "3:08" },
+    { title: "Yesterday", artist: "The Beatles", duration: "2:06" },
+    { title: "Eight Days a Week", artist: "The Beatles", duration: "2:44" },
+    { title: "Can't Buy Me Love", artist: "The Beatles", duration: "2:12" },
+    { title: "I Want to Hold Your Hand", artist: "The Beatles", duration: "2:24" },
+    { title: "A Day in the Life", artist: "The Beatles", duration: "5:33" }
+
 ]
 },
 {
@@ -28,7 +35,7 @@ id: 3,
 name: "Thriller",
 author: "Michael Jackson",
 likeCount: 2100,
-cover: "img/thriller.jpg",
+cover: "img/michael-jackson-thriller.jpg",
 songs: [
     { title: "Thriller", artist: "Michael Jackson", duration: "5:57" },
     { title: "Beat It", artist: "Michael Jackson", duration: "4:18" },
@@ -45,6 +52,7 @@ songs: [
     { title: "Hells Bells", artist: "AC/DC", duration: "5:12" },
     { title: "Shoot to Thrill", artist: "AC/DC", duration: "5:17" },
     { title: "Back in Black", artist: "AC/DC", duration: "4:15" }
+    
 ]
 },
 {
@@ -57,6 +65,7 @@ songs: [
     { title: "Smells Like Teen Spirit", artist: "Nirvana", duration: "5:01" },
     { title: "Come as You Are", artist: "Nirvana", duration: "3:39" },
     { title: "Lithium", artist: "Nirvana", duration: "4:17" }
+
 ]
 },
 {

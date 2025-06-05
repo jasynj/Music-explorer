@@ -102,35 +102,55 @@ body
     box-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
 
-.tile-actions {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    display: none;
-    gap: 0.8rem;
+
+
+/* Hide icons by default */
+.playlist-tile .edit-icon,
+.playlist-tile .delete-icon {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 0.4rem;
+  margin: 0.4rem;
+  cursor: pointer;
+  stroke: #5fafed;
 }
 
-.playlist-tile:hover .tile-actions {
-    display: flex;
+/* Show on hover */
+.playlist-tile:hover .edit-icon,
+.playlist-tile:hover .delete-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  stroke: #5fafed;
 }
 
-.tile-actions svg {
-    width: 2rem;
-    height: 2rem;
-    color: #E0E0E0;
-    cursor: pointer;
+/* Edit icon on top‐left */
+.playlist-tile .edit-icon {
+  left: 1rem;
 }
 
-.tile-actions svg:hover {
-    color: #FF8A80;
+/* Delete icon on top‐right */
+.playlist-tile .delete-icon {
+  right: 1rem;
 }
 
-.edit-icon
-{
-    stroke: currentColor;
-    stroke-width: 0.15rem;
-    fill: none;
-    /* view-box:  */
+/* SVG inside each wrapper should fill that circle */
+.playlist-tile .edit-icon svg,
+.playlist-tile .delete-icon svg {
+  width: 100%;
+  height: 100%;
+  color: #E0E0E0;
+  stroke: currentColor;
+}
+
+.playlist-tile .edit-icon:hover svg,
+.playlist-tile .delete-icon:hover svg {
+  color: #FF8A80;
 }
 
 /* ======= ADD NEW PLAYLIST TILE ========= */
@@ -281,6 +301,23 @@ body
     cursor: pointer;
 }
 
+/* default heart color */
+.like-logo {
+  
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+/* on hover → turn blue */
+.like-logo:active {
+  fill: #3BA9FE;
+}
+
+/* when clicked/liked → stay blue */
+.like-logo.liked {
+  fill: #3BA9FE;
+}
+
 
 /* =====MODAL==== */
 
@@ -326,9 +363,9 @@ body
 
 /* Cover image inside modal */
 .modal-cover {
-    width: 100%;
+    width: 50%;
     height: auto;
-    max-height: 25rem;
+    max-height: 100%;
     object-fit: cover;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
