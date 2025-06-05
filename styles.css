@@ -60,6 +60,10 @@ body
     margin-left: 2rem;
 }
 
+.navbar a:visited
+{
+    color: #7fbff1;
+}
 .navbar a:hover,
 .navbar a:focus {
     color: #3BA9FE;              
@@ -90,10 +94,43 @@ body
     border-radius: 2.8rem;
     height: 35rem;
     padding: 0.8rem;
+
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.tile-actions {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+    gap: 0.8rem;
+}
+
+.playlist-tile:hover .tile-actions {
+    display: flex;
+}
+
+.tile-actions svg {
+    width: 2rem;
+    height: 2rem;
+    color: #E0E0E0;
+    cursor: pointer;
+}
+
+.tile-actions svg:hover {
+    color: #FF8A80;
+}
+
+.edit-icon
+{
+    stroke: currentColor;
+    stroke-width: 0.15rem;
+    fill: none;
+    /* view-box:  */
 }
 
 /* ======= ADD NEW PLAYLIST TILE ========= */
@@ -158,10 +195,12 @@ body
     border-radius: 1rem;
     cursor: pointer;
     display: inline-block;
+
+    /* transition:  */
 }
 
 .np-right button:hover {
-    background-color: #018E81;
+    background-color: #7fbff1;
 }
 
 @media (max-width: 55rem) {
@@ -184,7 +223,6 @@ body
     padding: 2rem;
 }
 }
-
 
 .playlist-tile .playlist-img {
     width: 100%;
@@ -242,6 +280,129 @@ body
     color: #FF8A80;
     cursor: pointer;
 }
+
+
+/* =====MODAL==== */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.modal {
+    background-color: #1F1F1F;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    max-width: 80rem;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 2rem;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 2.4rem;
+    color: #E0E0E0;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    color: #FF8A80;
+}
+
+/* Cover image inside modal */
+.modal-cover {
+    width: 100%;
+    height: auto;
+    max-height: 25rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Title and author in modal */
+.modal-title {
+    font-size: 2.4rem;
+    color: #E0E0E0;
+    margin-bottom: 0.5rem;
+}
+
+.modal-author {
+    font-size: 1.6rem;
+    color: #A0A0A0;
+    margin-bottom: 1.5rem;
+}
+
+/* Songs list section */
+.modal-songs {
+    margin-top: 1rem;
+}
+
+.modal-songs h3 {
+    font-size: 1.8rem;
+    color: #E0E0E0;
+    margin-bottom: 1rem;
+}
+
+.modal-song-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-song-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #333;
+}
+
+.song-title {
+  flex: 2;
+  color: #E0E0E0;
+}
+
+.song-artist {
+  flex: 1.5;
+  color: #A0A0A0;
+  text-align: center;
+}
+
+.song-duration {
+  flex: 0.5;
+  color: #A0A0A0;
+  text-align: right;
+}
+
+/* Optional scrollbar styling */
+.modal::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 0.4rem;
+}
+
+.modal::-webkit-scrollbar-track {
+  background-color: #1F1F1F;
+}
+
 
 /* ===== FOOTER ===== */
 footer {
