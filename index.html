@@ -383,7 +383,7 @@
     <div class="add-modal-overlay" id="addModal">
         <div class="add-modal">
             <button class="add-modal-close" id="closeAddModal">×</button>
-            <h2>Add New Playlist</h2>
+            <h2 id="addModalTitle">Add New Playlist</h2>
             <form id="addPlaylistForm">
             <div class="form-group">
                 <label for="playlistName">Playlist Name:</label>
@@ -411,12 +411,12 @@
             <div class="modal-btns">
 
                 <button id="addSongButton" type="button"> + Add song</button>
-                <button id="create-playlist-button"   type="submit">Create Playlist</button>
+                <button id="submitAddEdit" id  type="submit">Create Playlist</button>
             </div>
         </form>
         </div>
     </div>
-
+<!-- i have an edit and delete icon in my playlist tile already and edit and delete button in my playlist modals, i want both of these to perform the same function -->
     <script src="script.js"></script>
     <script src="data.js"></script>
 </body>
