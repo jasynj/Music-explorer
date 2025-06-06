@@ -53,7 +53,7 @@ body
 {
   display: flex;
   position: fixed;
-  right: 80rem;
+  right: 75rem;
 }
 
 .nav-link:link,
@@ -107,30 +107,49 @@ body
 }
 
 .search-bar {
-  display: none;
-  margin-left: 0.5rem;
-  padding: 0.4rem 1rem;
-  font-size: 1.6rem;
-  border: 1px solid #333;
-  border-radius: 0.4rem;
-  background-color: #2A2A2A;
-  color: #E0E0E0;
+    opacity: 0;
+    width: 0;
+    /* padding: 0 0 0.5rem 0;             */
+    padding: 0;
+    border: 1px solid transparent;
+    font-size: 1.6rem;
+
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #1F1F1F;
+
+    transition:
+    opacity 1s ease,
+    width 1s ease,
+    padding 1s ease,
+    border-color 1s ease;
+
 }
 
+
+.search-wrapper
+{
+  flex-direction: column;
+  align-items: center;
+    /* flex-direction: row; */
+}
 .search-wrapper:hover .search-bar {
-  display: inline-block;
+    opacity: 1;
+    width: 15rem;              
+    padding: 0.4rem 1rem;       
+    border-color: #333;    
 }
 
-.search-wrapper {
+/* .search-wrapper {
   display: inline-block;
   position: relative;
   cursor: pointer;
   transition: display 3s;
-}
+} */
 
-.search-icon:hover {
+/* .search-icon:hover {
   color: #3BA9FE; 
-}
+} */
 
 
 /* ===== MAIN GRID CONTAINER ===== */
@@ -605,7 +624,7 @@ body
   color: #FF8A80;
 }
 
-/* Form styling */
+
 .add-modal h2 {
   margin-bottom: 1.5rem;
   font-size: 2.2rem;
@@ -637,7 +656,6 @@ body
   color: #7A7A7A;
 }
 
-/* Songs container: each .song-pair is flex row */
 .songs-container .song-pair {
   display: flex;
   gap: 1rem;
@@ -662,7 +680,7 @@ body
   background: #FF8A80;
 }
 
-/* “+ Add another song” button */
+
 #addSongButton {
   background-color: #3BA9FE;
   color: #121212;
@@ -677,21 +695,24 @@ body
   background-color: #2f87cb;
 }
 
-/* Submit button */
 .add-modal button[type="submit"] {
-  background-color: #03DAC6;
+  background-color: #3BA9FE;
   color: #121212;
-  padding: 0.8rem 1.2rem;
+  padding: 0.6rem 1rem;
   border: none;
-  border-radius: 0.8rem;
-  font-size: 1.6rem;
+  border-radius: 0.6rem;
+  font-size: 1.4rem;
   cursor: pointer;
 }
 .add-modal button[type="submit"]:hover {
-  background-color: #018E81;
+  background-color: #2f87cb;
 }
 
-
+.modal-btns
+{
+  display: flex;
+  justify-content: space-between;
+}
 
 
 /* ======== FEATURED PLAYLIST ======== */
@@ -767,7 +788,7 @@ body
   color: #A0A0A0;
 }
 
-/* MEDIA QUERY: on small screens, ensure it doesn’t overflow */
+/* MEDIA QUERY: for phone, so it will not overflow */
 @media (max-width: 600px) {
   .featured-card {
     padding: 1.5rem;

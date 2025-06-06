@@ -64,7 +64,7 @@
                     <h2>The best <span>music playlist explorer </span> </h2>
                     <p>Jexplorer is an artist-first music platform that helps musicians reach and engage fans across the world.</p>
                     <span>
-                        <!-- <button> Add new playlist for FREE </button> -->
+                        <button id="open-add-playlist"> Add new playlist for FREE </button>
                     </span>
                 </div>
             </div>
@@ -381,41 +381,41 @@
         <p> FOOTER </p>
     </footer>
     <div class="add-modal-overlay" id="addModal">
-    <div class="add-modal">
-        <button class="add-modal-close" id="closeAddModal">×</button>
-        <h2>Add New Playlist</h2>
-        <form id="addPlaylistForm">
-        <!-- Playlist Name -->
-        <div class="form-group">
-            <label for="playlistName">Playlist Name:</label>
-            <input type="text" id="playlistName" name="playlistName" required />
-        </div>
+        <div class="add-modal">
+            <button class="add-modal-close" id="closeAddModal">×</button>
+            <h2>Add New Playlist</h2>
+            <form id="addPlaylistForm">
+            <div class="form-group">
+                <label for="playlistName">Playlist Name:</label>
+                <input type="text" id="playlistName" name="playlistName" required />
+            </div>
 
-        <div class="form-group">
-            <label for="playlistAuthor">Author:</label>
-            <input type="text" id="playlistAuthor" name="playlistAuthor" required />
-        </div>
+            <div class="form-group">
+                <label for="playlistAuthor">Author:</label>
+                <input type="text" id="playlistAuthor" name="playlistAuthor" required />
+            </div>
 
-        <!-- Cover Image URL -->
-        <div class="form-group">
-            <label for="coverUrl">Cover Image URL:</label>
-            <input type="url" id="coverUrl" name="coverUrl" placeholder="https://…" required />
-        </div>
+            <div class="form-group">
+                <label for="coverUrl">Cover Image URL:</label>
+                <input type="text" id="coverUrl" name="coverUrl" required />
+            </div>
 
-        <div class="form-group songs-container" id="songsContainer">
-            <label>Songs:</label>
-            <div class="song-pair">
-                <input type="text" name="songTitle" placeholder="Song Title" required/>
-                <input type="text" name="songArtist" placeholder="Song Artist" required />
-                <button class="remove-song" type="button">×</button>
-          </div>
+            <div class="form-group songs-container" id="songsContainer">
+                <label>Songs:</label>
+                <div class="song-pair">
+                    <input type="text" name="songTitle" placeholder="Song Title" required/>
+                    <input type="text" name="songArtist" placeholder="Song Artist" required />
+                    <button class="remove-song" type="button">×</button>
+                </div>
+            </div>
+            <div class="modal-btns">
+
+                <button id="addSongButton" type="button"> + Add song</button>
+                <button id="create-playlist-button"   type="submit">Create Playlist</button>
+            </div>
+        </form>
         </div>
-        
-        <button id="addSongButton" type="button"> + Add song</button>
-        <button type="submit">Create Playlist</button>
-      </form>
     </div>
-  </div>
 
     <script src="script.js"></script>
     <script src="data.js"></script>
