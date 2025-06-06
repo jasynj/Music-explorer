@@ -128,9 +128,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // When tile clicked, open its modal
     tile.addEventListener("click", () => openModal(pl.id));
-  });
-
-  function openModal(id) {
+});
+function openModal(id) {
     const pl = playlists.find((p) => p.id === id);
     if (!pl) return;
 
@@ -144,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
     closeBtn.classList.add("modal-close");
     closeBtn.textContent = "×";
     closeBtn.addEventListener("click", () => {
-      document.body.removeChild(overlay);
+        document.body.removeChild(overlay);
     });
 
     const coverImg = document.createElement("img");
@@ -160,28 +159,71 @@ document.addEventListener("DOMContentLoaded", () => {
     author.classList.add("modal-author");
     author.textContent = `By ${pl.author}`;
 
+    // Container for songs + shuffle button
     const songListContainer = document.createElement("div");
     songListContainer.classList.add("modal-songs");
+
+    // Heading + shuffle button wrapper
+    const headingWrapper = document.createElement("div");
+    headingWrapper.style.display = "flex";
+    headingWrapper.style.justifyContent = "space-between";
+    headingWrapper.style.alignItems = "center";
+    headingWrapper.setAttribute("class", "")
+    
     const songListTitle = document.createElement("h3");
     songListTitle.textContent = "Track List:";
-    songListContainer.appendChild(songListTitle);
+    
+    const shuffleBtn = document.createElement("button");
+    shuffleBtn.classList.add("shuffle-btn");
+    shuffleBtn.textContent = "Shuffle";
+    
+    const editBtn = document.createElement("button")
+    editBtn.classList.add("edit-btn");
+    editBtn.textContent = "Edit"
+    
+    const deleteBtn = document.createElement("button")
+    deleteBtn.classList.add("delete-btn");
+    deleteBtn.textContent = "Delete"
+    
+    headingWrapper.append(editBtn, deleteBtn);
+    headingWrapper.append(songListTitle, shuffleBtn);
+    songListContainer.appendChild(headingWrapper);
 
+    // <ul> for song items
     const ul = document.createElement("ul");
     ul.classList.add("modal-song-list");
-    pl.songs.forEach((song) => {
-      const li = document.createElement("li");
-      li.classList.add("modal-song-item");
-      li.innerHTML = `
-        <span class="song-title">${song.title}</span>
-        <span class="song-artist">${song.artist}</span>
-        <span class="song-duration">${song.duration}</span>
-      `;
-      ul.appendChild(li);
-    });
+
+    // Function to render `pl.songs` into the UL
+    function renderSongs() {
+        ul.innerHTML = ""; 
+        pl.songs.forEach((song) => {
+            const li = document.createElement("li");
+            li.classList.add("modal-song-item");
+            li.innerHTML = `
+                <span class="song-title">${song.title}</span>
+                <span class="song-artist">${song.artist}</span>
+                <span class="song-duration">${song.duration}</span>
+            `;
+            ul.appendChild(li);
+        });
+    }
+
+    // Initial render
+    renderSongs();
     songListContainer.appendChild(ul);
+
+    // Shuffle‐logic: Fisher–Yates
+    shuffleBtn.addEventListener("click", () => {
+        for (let i = pl.songs.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [pl.songs[i], pl.songs[j]] = [pl.songs[j], pl.songs[i]];
+        }
+        renderSongs();
+    });
 
     modal.append(closeBtn, coverImg, title, author, songListContainer);
     overlay.appendChild(modal);
     document.body.appendChild(overlay);
-  }
+}
+
 });

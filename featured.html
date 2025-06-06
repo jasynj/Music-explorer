@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MUSIC SOMETHING</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Featured Playlist</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">   
+    <header class="header">
         <div>
-            <h2 class= "title">  Jexplorer</h2>
+            <h2 class="title">Jexplorer</h2>
         </div>
 
-        
+
+
         <nav class="navbar">
-            <a href="featured.html"> Featured</a>
-            <a href="#" class="temp"> All</a>
-            <a href="#"> New Arrivals</a>
+            <a style="color: #2976b2" href="featured.html" class="nav-link">Featured</a>
+            <a href="index.html" class="nav-link">All</a>
+            <a href="#" class="nav-link">New Arrivals</a>
         </nav>
+
 
         <span>
             <svg height="24px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -41,335 +37,15 @@
         </span>
     </header>
 
-    
-    <main class="container">
-        
-        <div class="playlist-tiles-container">
-            <div class="new-playlist-tile">
-                <div class="np-left">
-                    <img class= "playlist-img" src="img/maurice-lourens-5jAxu-x08Qo-unsplash.jpg" alt="Playlist #">
-                </div>
-                <div class="np-right">
-                    <h2>The best <span>music playlist explorer </span> </h2>
-                    <p>Jexplorer is an artist-first music platform that helps musicians reach and engage fans across the world.</p>
-                    <span>
-                        <button> Add new playlist for FREE </button>
-                    </span>
-                </div>
-            </div>
-            
-            <!-- <placeholder>
-            <div class="playlist-tile">
-                    <img class= "playlist-img" src="img/debby-hudson-hah1pStI7L0-unsplash.jpg" alt="Playlist #">
-                    <div class="playlist-info">
-                        <div class="left">
-                            
-                            <p class="playlist-title">Title</p>
-                            <p class=" playlist-author">Author</p>
-                        </div>
-                        <div class="right">
-                            
-                            <p class="like-count"> 0 </p>
-                            <span>            
-                                <svg class= "like-logo" height = 24px xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="playlist-tile">
-                    <img class= "playlist-img" src="img/debby-hudson-hah1pStI7L0-unsplash.jpg" alt="Playlist #">
-                    <div class="playlist-info">
-                        <div class="left">
-                            
-                            <p class="playlist-title">Title</p>
-                            <p class=" playlist-author">Author</p>
-                        </div>
-                        <div class="right">
-                            
-                            <p class="like-count"> 0 </p>
-                            <span>            
-                                <svg class= "like-logo" height = 24px xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="playlist-tile">
-                    <img class= "playlist-img" src="img/debby-hudson-hah1pStI7L0-unsplash.jpg" alt="Playlist #">
-                    <div class="playlist-info">
-                        <div class="left">
-                            
-                            <p class="playlist-title">Title</p>
-                            <p class=" playlist-author">Author</p>
-                        </div>
-                        <div class="right">
-                            
-                            <p class="like-count"> 0 </p>
-                            <span>            
-                                <svg class= "like-logo" height = 24px xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="playlist-tile">
-                    <img class= "playlist-img" src="img/placeholder.png" alt="Playlist #">
-                    <div class="playlist-info">
-                        <div class="left">
-                            
-                            <p class="playlist-title">Title</p>
-                            <p class=" playlist-author">Author</p>
-                        </div>
-                        <div class="right">
-                            
-                            <p class="like-count"> 0 </p>
-                            <span>            
-                                <svg class= "like-logo" height = 24px xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="playlist-tile">
-                    <img class= "playlist-img" src="img/placeholder.png" alt="Playlist #">
-                    <div class="playlist-info">
-                        <div class="left">
-                            
-                            <p class="playlist-title">Title</p>
-                            <p class=" playlist-author">Author</p>
-                        </div>
-                        <div class="right">
-                            
-                            <p class="like-count"> 0 </p>
-                            <span>            
-                                <svg class= "like-logo" height = 24px xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="playlist-tile">
-                    <img class= "playlist-img" src="img/placeholder.png" alt="Playlist #">
-                    <div class="playlist-info">
-                        <div class="left">
-                            
-                            <p class="playlist-title">Title</p>
-                            <p class=" playlist-author">Author</p>
-                        </div>
-                        <div class="right">
-                            
-                            <p class="like-count"> 0 </p>
-                            <span>            
-                                <svg class= "like-logo" height = 24px xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="playlist-tile">
-                    <img class= "playlist-img" src="img/placeholder.png" alt="Playlist #">
-                    <div class="playlist-info">
-                        <div class="left">
-                            
-                            <p class="playlist-title">Title</p>
-                            <p class=" playlist-author">Author</p>
-                        </div>
-                        <div class="right">
-                            
-                            <p class="like-count"> 0 </p>
-                            <span>            
-                                <svg class= "like-logo" height = 24px xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="playlist-tile">
-                    <img class= "playlist-img" src="img/placeholder.png" alt="Playlist #">
-                    <div class="playlist-info">
-                        <div class="left">
-                            
-                            <p class="playlist-title">Title</p>
-                            <p class=" playlist-author">Author</p>
-                        </div>
-                        <div class="right">
-                            
-                            <p class="like-count"> 0 </p>
-                            <span>            
-                                <svg class= "like-logo" height = 24px xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="playlist-tile">
-                    <img class= "playlist-img" src="img/placeholder.png" alt="Playlist #">
-                    <div class="playlist-info">
-                        <div class="left">
-                            
-                            <p class="playlist-title">Title</p>
-                            <p class=" playlist-author">Author</p>
-                        </div>
-                        <div class="right">
-                            
-                            <p class="like-count"> 0 </p>
-                            <span>            
-                                <svg class= "like-logo" height = 24px xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="playlist-tile">
-                    <img class= "playlist-img" src="img/placeholder.png" alt="Playlist #">
-                    <div class="playlist-info">
-                        <div class="left">
-                            
-                            <p class="playlist-title">Title</p>
-                            <p class=" playlist-author">Author</p>
-                        </div>
-                        <div class="right">
-                            
-                            <p class="like-count"> 0 </p>
-                            <span>            
-                                <svg class= "like-logo" height = 24px xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="playlist-tile">
-                    <img class= "playlist-img" src="img/placeholder.png" alt="Playlist #">
-                    <div class="playlist-info">
-                        <div class="left">
-                            
-                            <p class="playlist-title">Title</p>
-                            <p class=" playlist-author">Author</p>
-                        </div>
-                        <div class="right">
-                            
-                            <p class="like-count"> 0 </p>
-                            <span>            
-                                <svg class= "like-logo" height = 24px xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="playlist-tile">
-                    <img class= "playlist-img" src="img/placeholder.png" alt="Playlist #">
-                    <div class="playlist-info">
-                        <div class="left">
-                            
-                            <p class="playlist-title">Title</p>
-                            <p class=" playlist-author">Author</p>
-                        </div>
-                        <div class="right">
-                            
-                            <p class="like-count"> 0 </p>
-                            <span>            
-                                <svg class= "like-logo" height = 24px xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="playlist-tile">
-                    <img class= "playlist-img" src="img/placeholder.png" alt="Playlist #">
-                    <div class="playlist-info">
-                        <div class="left">
-                            
-                            <p class="playlist-title">Title</p>
-                            <p class=" playlist-author">Author</p>
-                        </div>
-                        <div class="right">
-                            
-                            <p class="like-count"> 0 </p>
-                            <span>            
-                                <svg class= "like-logo" height = 24px xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="playlist-tile">
-                    <img class= "playlist-img" src="img/placeholder.png" alt="Playlist #">
-                    <div class="playlist-info">
-                        <div class="left">
-                            
-                            <p class="playlist-title">Title</p>
-                            <p class=" playlist-author">Author</p>
-                        </div>
-                        <div class="right">
-                            
-                            <p class="like-count"> 0 </p>
-                            <span>            
-                                <svg class= "like-logo" height = 24px xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="playlist-tile">
-                    <img class= "playlist-img" src="img/placeholder.png" alt="Playlist #">
-                    <div class="playlist-info">
-                        <div class="left">
-                            
-                            <p class="playlist-title">Title</p>
-                            <p class=" playlist-author">Author</p>
-                        </div>
-                        <div class="right">
-                            
-                            <p class="like-count"> 0 </p>
-                            <span>            
-                                <svg class= "like-logo" height = 24px xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="playlist-tile">
-                    <img class= "playlist-img" src="img/placeholder.png" alt="Playlist #">
-                    <div class="playlist-info">
-                        <div class="left">
-                            
-                            <p class="playlist-title">Title</p>
-                            <p class=" playlist-author">Author</p>
-                        </div>
-                        <div class="right">
-                            
-                            <p class="like-count"> 0 </p>
-                            <span>            
-                                <svg class= "like-logo" height = 24px xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-        </placeholder> -->
-        </main>
+    <main class="container"></main>
+        <div class="featured-container"></div>
+    </main>
+
     <footer>
-        <p> FOOTER </p>
+        <p>FOOTER</p>
     </footer>
-    <script src="script.js"></script>
-    <script src="data.js"></script>
+
+<script src="data.js"></script>
+<script src="featured.js"></script>
 </body>
 </html>
