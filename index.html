@@ -15,7 +15,7 @@
 <body>
     <header class="header">
         <div>
-            <h2 class= "title">  Jexplorer</h2>
+            <h2 class= "title">  Jexplorer </h2>
         </div>
 
         
@@ -30,11 +30,22 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
             </svg>
 
-            <svg height="24px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-            </svg>
-
-
+            
+            <span class="search-wrapper">
+                <svg
+                class="search-icon"
+                height="24px"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                >
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+                <input class="search-bar" type="text" placeholder="Search…"/>
+            </span>
+            
             <svg height="24px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
             </svg>
@@ -53,7 +64,7 @@
                     <h2>The best <span>music playlist explorer </span> </h2>
                     <p>Jexplorer is an artist-first music platform that helps musicians reach and engage fans across the world.</p>
                     <span>
-                        <button> Add new playlist for FREE </button>
+                        <!-- <button> Add new playlist for FREE </button> -->
                     </span>
                 </div>
             </div>
@@ -369,6 +380,43 @@
     <footer>
         <p> FOOTER </p>
     </footer>
+    <div class="add-modal-overlay" id="addModal">
+    <div class="add-modal">
+        <button class="add-modal-close" id="closeAddModal">×</button>
+        <h2>Add New Playlist</h2>
+        <form id="addPlaylistForm">
+        <!-- Playlist Name -->
+        <div class="form-group">
+            <label for="playlistName">Playlist Name:</label>
+            <input type="text" id="playlistName" name="playlistName" required />
+        </div>
+
+        <div class="form-group">
+            <label for="playlistAuthor">Author:</label>
+            <input type="text" id="playlistAuthor" name="playlistAuthor" required />
+        </div>
+
+        <!-- Cover Image URL -->
+        <div class="form-group">
+            <label for="coverUrl">Cover Image URL:</label>
+            <input type="url" id="coverUrl" name="coverUrl" placeholder="https://…" required />
+        </div>
+
+        <div class="form-group songs-container" id="songsContainer">
+            <label>Songs:</label>
+            <div class="song-pair">
+                <input type="text" name="songTitle" placeholder="Song Title" required/>
+                <input type="text" name="songArtist" placeholder="Song Artist" required />
+                <button class="remove-song" type="button">×</button>
+          </div>
+        </div>
+        
+        <button id="addSongButton" type="button"> + Add song</button>
+        <button type="submit">Create Playlist</button>
+      </form>
+    </div>
+  </div>
+
     <script src="script.js"></script>
     <script src="data.js"></script>
 </body>

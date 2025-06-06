@@ -49,6 +49,12 @@ body
     font-size: 2.2rem;
 }
 
+.navbar
+{
+  display: flex;
+  position: fixed;
+  right: 80rem;
+}
 
 .nav-link:link,
 .nav-link:visited {
@@ -99,6 +105,33 @@ body
     color: #3BA9FE;
     cursor: pointer;
 }
+
+.search-bar {
+  display: none;
+  margin-left: 0.5rem;
+  padding: 0.4rem 1rem;
+  font-size: 1.6rem;
+  border: 1px solid #333;
+  border-radius: 0.4rem;
+  background-color: #2A2A2A;
+  color: #E0E0E0;
+}
+
+.search-wrapper:hover .search-bar {
+  display: inline-block;
+}
+
+.search-wrapper {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: display 3s;
+}
+
+.search-icon:hover {
+  color: #3BA9FE; 
+}
+
 
 /* ===== MAIN GRID CONTAINER ===== */
 .playlist-tiles-container {
@@ -401,7 +434,6 @@ body
     margin-bottom: 1.5rem;
 }
 
-/* Title and author in modal */
 .modal-title {
     font-size: 2.4rem;
     color: #E0E0E0;
@@ -414,9 +446,9 @@ body
     margin-bottom: 5rem;
 }
 
-/* Songs list section */
 .modal-songs {
     margin-top: 1rem;
+    position: relative;
 }
 
 .modal-songs h3 {
@@ -462,7 +494,6 @@ body
   text-align: right;
 }
 
-/* Optional scrollbar styling */
 .modal::-webkit-scrollbar {
   width: 0.8rem;
 }
@@ -474,11 +505,6 @@ body
 
 .modal::-webkit-scrollbar-track {
   background-color: #1F1F1F;
-}
-
-/* Shuffle button inside modal */
-.modal-songs {
-  position: relative;
 }
 
 .shuffle-btn {
@@ -537,6 +563,135 @@ body
 .edit-btn:hover {
   background-color: #2f87cb;
 }
+
+/* ADD PLAYLIST MODAL */
+
+.add-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;                 /* hidden by default */
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+}
+
+.add-modal {
+  background-color: #1F1F1F;
+  border-radius: 0.8rem;
+  width: 90%;
+  max-width: 50rem;
+  padding: 2rem;
+  position: relative;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  color: #E0E0E0;
+}
+
+/* “×” close button in top-right */
+.add-modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 2.4rem;
+  color: #E0E0E0;
+  cursor: pointer;
+}
+.add-modal-close:hover {
+  color: #FF8A80;
+}
+
+/* Form styling */
+.add-modal h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+}
+
+.add-modal .form-group {
+  margin-bottom: 1.2rem;
+}
+
+.add-modal label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 1.6rem;
+  color: #A0A0A0;
+}
+
+.add-modal input[type="text"],
+.add-modal input[type="url"] {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 1.6rem;
+  border: 1px solid #333;
+  border-radius: 0.6rem;
+  background-color: #2A2A2A;
+  color: #E0E0E0;
+}
+
+.add-modal input::placeholder {
+  color: #7A7A7A;
+}
+
+/* Songs container: each .song-pair is flex row */
+.songs-container .song-pair {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.songs-container .song-pair input {
+  flex: 1;
+}
+
+.songs-container .song-pair .remove-song {
+  background: #CF6679;
+  border: none;
+  color: #121212;
+  font-size: 1.4rem;
+  width: 2.4rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+}
+
+.songs-container .song-pair .remove-song:hover {
+  background: #FF8A80;
+}
+
+/* “+ Add another song” button */
+#addSongButton {
+  background-color: #3BA9FE;
+  color: #121212;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 0.6rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+#addSongButton:hover {
+  background-color: #2f87cb;
+}
+
+/* Submit button */
+.add-modal button[type="submit"] {
+  background-color: #03DAC6;
+  color: #121212;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.add-modal button[type="submit"]:hover {
+  background-color: #018E81;
+}
+
+
 
 
 /* ======== FEATURED PLAYLIST ======== */
