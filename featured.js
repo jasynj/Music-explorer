@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-// 1) Find the container where we’ll render the featured playlist
 const container = document.querySelector(".featured-container");
 if (!container) return;
 
