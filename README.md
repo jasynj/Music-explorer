@@ -143,16 +143,22 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
 Absolutely—the weekly labs on DOM querying/manipulation, event handling, and modular JavaScript really laid the groundwork. I felt confident wiring up form inputs, creating and appending elements, and attaching listeners. The one area I felt a bit under-prepared was dynamically reusing the “Add New” form for editing existing playlists (pre-filling inputs and swapping submit behavior)—that required juggling state and multiple code paths in the same handler, which we hadn’t practiced in quite that pattern.
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
-  
-
+I would love to add dark mode/light mode toggle feature
+I would have completed my search and sort features
+Add user log in, sign up, and account handling so users could share playlists they create with friends they have added.
+I would implement a 'New Arrivals' page for weekly ai generated playlists that match the users style
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
+Yes, one of my peers (Imani) had a feature to add a delete function to all playlist tiles to ease the deleting process much like iOS style of deleting.
 
-
+Something that didn't go as planned - I useda css grid to do my tiles. including the add new playlist section. it was a stretched out column. i would have made that a seperate block from the rest of my playlist tiles because i was then unable to add space or other elements in between the add new playlist section and the rest of the tiles.
 
 ### Open-source libraries used
 None
 
 ### Shout out
-
+TA - Mr Jesus
+Intern Manager - Ameya Gawde
+Paige & Michelle - for all the vocal and technical support
+King Igbozuruike & Angel Balogun & Eniola Farinde - My friends/support system who kept pushing me to go farther and implement as much as i can
 
