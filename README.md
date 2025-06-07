@@ -104,32 +104,32 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
   - [x] Add a delete button to each playlist tile within the grid view.
   - [x] When clicked, the playlist is removed from the playlist grid view.
 
-- [x] **Search Functionality**
-  - [x] Implement a search bar that allows users to filter playlists by:
-    - [x] Name 
-    - [x] Author
+- [] **Search Functionality**
+  - [] Implement a search bar that allows users to filter playlists by:
+    - [] Name 
+    - [] Author
   - [x] The search bar should include:
     - [x] Text input field
     - [x] Submit/Search Button
-    - [x] Clear Button
-  - [x] Playlists matching the search query in the text input are displayed in a grid view when the user:
-    - [x] Presses the Enter Key
-    - [x] Clicks the Submit/Search Button 
-  - [x] User can click the clear button. When clicked:
-    - [x] All text in the text input field is deleted
-    - [x] All playlists in the `data.json` file are displayed in a grid view
-    - [x] **Optional:** If the Add Playlist, Edit Existing Playlist, or Delete Playlist stretch features were implemented:
-      - [x] If users can add a playlist, added playlists should be included in search results.
-      - [x] If users can edit a playlist, search results should reflect the latest edits to each playlist.
-      - [x] If users can delete a playlist, deleted playlists should no longer be included in search results.
+    - [] Clear Button
+  - [] Playlists matching the search query in the text input are displayed in a grid view when the user:
+    - [] Presses the Enter Key
+    - [] Clicks the Submit/Search Button 
+  - [] User can click the clear button. When clicked:
+    - [] All text in the text input field is deleted
+    - [] All playlists in the `data.json` file are displayed in a grid view
+    - [] **Optional:** If the Add Playlist, Edit Existing Playlist, or Delete Playlist stretch features were implemented:
+      - [] If users can add a playlist, added playlists should be included in search results.
+      - [] If users can edit a playlist, search results should reflect the latest edits to each playlist.
+      - [] If users can delete a playlist, deleted playlists should no longer be included in search results.
       - **Note:** You will not be graded on the implementation of this optional subfeature to keep your grade of this stretch feature independent of your implementation of other stretch features. However, we highly suggest including this in your implementation to model realistic behavior of real applications. 
 
-- [x] **Sorting Options**
-  - [x] Implement a drop-down or button options that allow users to sort the playlist by:
-    - [x] Name (A-Z alphabetically)
-    - [x] Number of likes (descending order)
-    - [x] Date added (most recent to oldest, chronologically)
-  - [x] Selecting a sort option should result in a reordering based on the selected sort while maintaining a grid view.
+- [] **Sorting Options**
+  - [] Implement a drop-down or button options that allow users to sort the playlist by:
+    - [] Name (A-Z alphabetically)
+    - [] Number of likes (descending order)
+    - [] Date added (most recent to oldest, chronologically)
+  - [] Selecting a sort option should result in a reordering based on the selected sort while maintaining a grid view.
 
 ### Walkthrough Video
 
@@ -140,7 +140,7 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-
+Absolutely—the weekly labs on DOM querying/manipulation, event handling, and modular JavaScript really laid the groundwork. I felt confident wiring up form inputs, creating and appending elements, and attaching listeners. The one area I felt a bit under-prepared was dynamically reusing the “Add New” form for editing existing playlists (pre-filling inputs and swapping submit behavior)—that required juggling state and multiple code paths in the same handler, which we hadn’t practiced in quite that pattern.
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
