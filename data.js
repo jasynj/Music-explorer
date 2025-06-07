@@ -109,7 +109,7 @@ songs: [
 id: 9,
 name: "21",
 author: "Adele",
-likeCount: 1720,
+likeCount: 0,
 cover: "img/R.jpeg",
 // cover: "img/21_adele.jpg",
 songs: [
