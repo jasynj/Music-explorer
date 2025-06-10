@@ -57,8 +57,8 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
 - [x] **Shuffle Songs**
   - [x] Enable users to shuffle the songs within a playlist using a shuffle button in the playlist's detail modal.
   - [x] When the shuffle button is clicked, the playlist's songs should display in a different order.
-  - [x] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please show yourself shuffling the same playlist more than once. 
-  
+  - [x] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please show yourself shuffling the same playlist more than once.
+
 - [x] **Featured Page**
   - [x] Application includes a dedicated page that randomly selects and displays a playlist, showing the playlist’s:
     - [x] Playlist Image
@@ -70,9 +70,9 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
   - [x] When the page is refreshed or reloaded, a new random playlist is displayed
 
     - For example, navigating to the all playlists page and then back to the featured playlist page should result in a new random playlist being displayed
-    - Note that because your algorithm will not be truly random, it is possible that the same playlist will feature twice in a row. 
-    - - [x] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please show yourself refreshing the featured page more than once. 
-  - [x] Application includes a navigation bar or some other mechanism such that users can navigate to the page with all playlists from the featured page and vice versa without using the browser's back and forward buttons. 
+    - Note that because your algorithm will not be truly random, it is possible that the same playlist will feature twice in a row.
+    - - [x] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please show yourself refreshing the featured page more than once.
+  - [x] Application includes a navigation bar or some other mechanism such that users can navigate to the page with all playlists from the featured page and vice versa without using the browser's back and forward buttons.
 
 #### STRETCH FEATURES
 
@@ -86,7 +86,7 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
       - [x] Title
       - [x] Artist
   - [x] The resulting playlist should display in the grid view.
-  - [x] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** For ease of grading, please show yourself adding at least two songs to the playlist. 
+  - [x] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** For ease of grading, please show yourself adding at least two songs to the playlist.
 
 - [x] **Edit Existing Playlists**
   - [x] Enable users to modify the details of existing playlists.
@@ -98,7 +98,7 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
   - [x] The playlist grid view and playlist detail modal should update to display any changes (see Required Features, Criterion 1 & 2).
   - [x] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** For ease of grading, please show yourself:
     - [x] Editing all of a playlist's features (name, creator, AND songs)
-    - [x] Editing some of a playlist's features (name, creator, OR songs) 
+    - [x] Editing some of a playlist's features (name, creator, OR songs)
 
 - [x] **Delete Playlists**
   - [x] Add a delete button to each playlist tile within the grid view.
@@ -106,7 +106,7 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
 
 - [] **Search Functionality**
   - [] Implement a search bar that allows users to filter playlists by:
-    - [] Name 
+    - [] Name
     - [] Author
   - [x] The search bar should include:
     - [x] Text input field
@@ -114,7 +114,7 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
     - [] Clear Button
   - [] Playlists matching the search query in the text input are displayed in a grid view when the user:
     - [] Presses the Enter Key
-    - [] Clicks the Submit/Search Button 
+    - [] Clicks the Submit/Search Button
   - [] User can click the clear button. When clicked:
     - [] All text in the text input field is deleted
     - [] All playlists in the `data.json` file are displayed in a grid view
@@ -122,7 +122,7 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
       - [] If users can add a playlist, added playlists should be included in search results.
       - [] If users can edit a playlist, search results should reflect the latest edits to each playlist.
       - [] If users can delete a playlist, deleted playlists should no longer be included in search results.
-      - **Note:** You will not be graded on the implementation of this optional subfeature to keep your grade of this stretch feature independent of your implementation of other stretch features. However, we highly suggest including this in your implementation to model realistic behavior of real applications. 
+      - **Note:** You will not be graded on the implementation of this optional subfeature to keep your grade of this stretch feature independent of your implementation of other stretch features. However, we highly suggest including this in your implementation to model realistic behavior of real applications.
 
 - [] **Sorting Options**
   - [] Implement a drop-down or button options that allow users to sort the playlist by:
@@ -157,8 +157,7 @@ Something that didn't go as planned - I useda css grid to do my tiles. including
 None
 
 ### Shout out
-TA - Mr Jesus
+TA - Mr Jesus Perez
 Intern Manager - Ameya Gawde
 Paige & Michelle - for all the vocal and technical support
 King Igbozuruike & Angel Balogun & Eniola Farinde - My friends/support system who kept pushing me to go farther and implement as much as i can
-
